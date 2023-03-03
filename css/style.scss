@@ -1,0 +1,397 @@
+body{
+    margin: 1.5em;
+    font-family: 'poppins',sans-serif;
+    background-image: linear-gradient(to right bottom, rgb(84, 84, 216),rgb(83, 79, 80));  
+          
+    opacity: .999;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.active{
+    &:hover{
+    color: purple;
+    }
+}
+.circle{
+    background-image: linear-gradient(to right bottom, blue,rgb(197, 28, 57));  
+    display: flex;
+    margin: auto auto; 
+    
+}
+
+.main-circles{
+    background-image: linear-gradient(to right bottom, blue,rgb(197, 28, 57));  
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 800ms;
+   // position: absolute;
+     
+}
+
+a{
+    text-decoration: none;
+}
+
+.hero-img{
+    background: url('../images/from-above-blue-and-white-ink.jpg');
+    position: absolute;
+    z-index: -10;
+    width: 100%;
+    height: 103vh;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    animation: moveDown 2s ease-in-out forwards;
+    
+}
+
+.logo{
+    color: black;
+    font-size: 2.2rem;
+    font-weight: bold;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0em 3em;
+    span{
+        color: purple;
+    }
+
+  
+
+   ul{
+    margin-top: 0;
+    list-style: none;
+    a{
+        font-size: 1.6rem;
+        color: black;
+
+        &:hover{
+            color: white;
+        }
+
+    }
+   }
+
+   .circle1{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    z-index: -5;
+    margin-left: -10px;
+    margin-top: -10px;
+    
+   }
+
+   .circle2{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    z-index: -5;
+    margin-top: -70px;
+    margin-left: -12px;
+    transition: transform 800ms;
+    
+   }
+}
+
+.hero{
+    display: flex;
+    margin-top: 150px;
+    justify-content: space-between;
+    
+    
+    .hero1{
+        margin-right: -300px;
+
+       
+    }
+
+    h1{
+        margin-left: 100px;
+        font-size: 2.5rem;
+        margin-top: -80px;
+        animation: slideInLeft 1s ease-in ;
+       
+    }
+    .subhead{
+        margin-top: -30px;
+        margin-left: 100px;
+        font-size: 1.5rem;
+        font-family: 'tilt neon';
+        animation: slideInLeft 2s ease-in;
+    }
+    .circle3{
+        width: 600px;
+        height: 600px;
+        border-radius: 50%;
+        z-index: -5;
+        margin-left: -250px;
+        margin-top: -150px;
+        
+    }
+
+    .craig{
+        background: url('../images/craig-hope.png');
+        width: 400px;
+        height: 400px;
+        background-size: cover;
+        margin-right: 120px;
+        background-position-x: -80px;
+        margin-top: 105px;
+    }
+
+    .hero3{
+        width: 35%;
+        .box{
+            h2{
+                font-size: 1.8rem;
+            }
+
+            .intro{
+                font-size: 1.3rem;
+                font-family: 'tilt neon';
+                margin-top: -20px;
+            }
+            opacity: .95;
+            background: palevioletred;
+            border-left: 3px solid black;
+            border-bottom: 3px solid black;
+            border-radius: 1.5em;
+            padding:  1em;
+            margin-left: -50px;
+            margin-right: 100px;
+            margin-top: -45px;
+            width: 75%;
+        }
+        .down-arrow{
+            width: 3em;
+            height: 4em;
+            color: white;
+            animation: moveArrow 1s alternate-reverse infinite;
+
+
+        }
+
+        h3{
+            font-size: 2rem;
+            margin-left: -45px;
+            
+            
+        }
+    }
+}
+
+main{
+    display: flex;
+    
+
+    .projects{
+    
+        border-left: 3px solid black;
+        border-bottom: 3px solid black;
+        border-radius: 1em;
+        padding: 1em 1em;
+        margin: 1em 7em;
+        width: 60%;
+        margin-top: 100px;
+        background-color: wheat;
+        opacity: .999;
+
+     
+        
+    
+        .circle4{
+            background-image: linear-gradient(to right bottom, blue,rgb(197, 28, 57));  
+          
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            position: absolute;
+            margin-top: -110px;
+            margin-left: 180px;
+            z-index: -5;
+            animation: bouncyCircle 1s alternate-reverse infinite ;
+            
+        }
+    
+    }
+
+    .circle5{
+        background-image: linear-gradient(to bottom right, aqua,blue);
+       
+        margin-top: 50px;
+        margin-left: 400px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .circle6{
+        margin-left: 50px;
+        width: 400px;
+        height: 400px;
+    }
+
+    
+
+   .main-circles.circle7{
+        margin-top: 50px;
+        width: 350px;
+        height: 350px;
+        margin-left: -90px;
+   }
+   .main-circles.circle75{
+        background-image: linear-gradient(to bottom right, aqua,blue);
+       
+        margin-top: 30px;
+        width: 150px;
+        height: 150px;
+        margin-left: 200px;
+   }
+   .main-circles.circle8{
+        margin-top: 100px;
+        width: 450px;
+        height: 450px;
+        margin-left: 10px;
+   }
+   .main-circles.circle9{
+        margin-top: 50px;
+        width: 350px;
+        height: 350px;
+        margin-left: -90px;
+        transition: transform 800ms;
+
+   
+   }
+}
+
+section.contact-info{
+    margin-top: 20px;
+    background: palevioletred;
+    padding: 1em 1em;
+    width: 90%;
+    left: 0;
+    border-radius: 1em;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    .desc{
+        font-size: 1.2rem;
+        font-family: 'tilt neon', sans-serif;
+    }
+
+}
+
+.fauxica {
+    border-left: 2px solid aqua;
+    border-bottom: 3px solid aqua;
+    height: 350px;
+    width: 350px;
+    margin: auto auto;
+    border-radius: 1em;
+    background-size: cover;
+    
+}
+   
+.nike{
+    border-right: 3px solid black;
+    border-top: 2px solid black;
+    height: 450px;
+    width: 400px;
+    margin: auto auto;
+    border-radius: 1em;
+  
+    
+    
+  
+}
+
+.freedom{
+    border-right: 3px solid aqua;
+    border-bottom: 3px solid aqua;
+    height: 350px;
+    width: 350px;
+    margin: auto auto;
+    border-radius: 1em;
+    background-size: cover;
+}
+.dorne{
+    border-left: 2px solid black;
+    border-bottom: 3px solid black;
+    height: 450px;
+    width: 450px;
+    margin: auto auto;
+    border-radius: 1em;
+    background-size: 180;
+}
+    
+
+    
+    
+    
+
+
+
+
+
+@keyframes moveArrow{
+    from{
+        transform: translateY(-30px);
+
+    }
+
+    to{
+        transform: translateY(0px);
+
+
+    }
+}
+@keyframes slideInLeft{
+    from{
+        transform: translateX(-300px);
+    }
+
+    to{
+        transform: translateX(0px);
+    }
+}
+@keyframes moveDown{
+    from{
+        transform: translateY(-400px);
+
+    }
+
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+
+
+    }
+}
+@keyframes bouncyCircle{
+    from{
+        transform: translateY(-30px);
+
+    }
+
+    to{
+        transform: translateY(0px);
+
+
+    }
+}
+.main-circles:hover{
+    transform: translateY(-50px);
+}  
+.circle2:hover{
+    transform: translatey(15px)}
+    
+    
